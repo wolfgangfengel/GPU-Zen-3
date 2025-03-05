@@ -1,0 +1,123 @@
+#version 460
+
+#extension GL_EXT_control_flow_attributes: require
+#extension GL_EXT_shader_8bit_storage: require
+#extension GL_EXT_shader_16bit_storage: require
+#extension GL_EXT_mesh_shader: require
+
+#include "shader_common.h"
+
+layout(local_size_x = kShaderGroupSize) in;
+layout(triangles, max_vertices = kMaxVerticesPerMeshlet, max_primitives = kMaxTrianglesPerMeshlet) out;
+
+layout(binding = 0) uniform UniformBufferObject { PerFrameData perFrameData; };
+layout(binding = 1) readonly buffer PerDrawDataVector { PerDrawData perDrawDataVector[]; };
+layout(binding = 2) readonly buffer DrawCommands { DrawCommand drawCommands[]; };
+layout(binding = 3) readonly buffer Meshlets { Meshlet meshlets[]; };
+layout(binding = 4) readonly buffer Meshes { Mesh meshes[]; };
+layout(binding = 5) readonly buffer MeshletVertices { uint meshletVertices[]; };
+layout(binding = 6) readonly buffer MeshletTriangles { uint8_t meshletTriangles[]; };
+layout(binding = 7) readonly buffer Vertices { Vertex vertices[]; };
+
+layout(location = 0) out vec3 outColor[];
+
+taskPayloadSharedEXT uint meshletIndices[kShaderGroupSize];
+shared vec3 clipPositions[kMaxVerticesPerMeshlet];
+
+void main()
+{
+	uint groupIndex = gl_WorkGroupID.x;
+	uint groupThreadIndex = gl_LocalInvocationID.x;
+	uint meshletIndex = meshletIndices[groupIndex]; 
+	
+	uint drawIndex = drawCommands[gl_DrawID].drawIndex;
+	PerDrawData perDrawData = perDrawDataVector[drawIndex];
+
+	vec3 meshletColor = getRandomColor(meshletIndex);
+	uint globalVertexOffset = meshes[perDrawData.meshIndex].vertexOffset;
+
+	for (uint localVertexIndex = groupThreadIndex;
+		localVertexIndex < meshlets[meshletIndex].vertexCount;
+		localVertexIndex += kShaderGroupSize)
+	{
+		uint vertexIndex = globalVertexOffset + meshletVertices[meshlets[meshletIndex].vertexOffset + localVertexIndex];
+		
+		vec3 position = vec3(
+			vertices[vertexIndex].position[0],
+			vertices[vertexIndex].position[1],
+			vertices[vertexIndex].position[2]);
+
+		vec4 worldPosition = perDrawData.model * vec4(position, 1.0);
+
+		vec3 normal = vec3(
+			int(vertices[vertexIndex].normal[0]),
+			int(vertices[vertexIndex].normal[1]),
+			int(vertices[vertexIndex].normal[2])) / 127.0 - 1.0;
+			
+		normal = mat3(perDrawData.model) * normalize(normal);
+
+		vec2 texCoord = vec2(
+			vertices[vertexIndex].texCoord[0],
+			vertices[vertexIndex].texCoord[1]);
+
+		gl_MeshVerticesEXT[localVertexIndex].gl_Position = perFrameData.projection * perFrameData.view * worldPosition;
+		
+		vec4 freezeClipPosition = perFrameData.projection * perFrameData.freezeView * worldPosition;
+		clipPositions[localVertexIndex] = freezeClipPosition.xyz / freezeClipPosition.w;
+		
+		float shade = dot(normal, normalize(perFrameData.cameraPosition.xyz - worldPosition.xyz));
+		outColor[localVertexIndex] = shade * (0.5 * (meshletColor + 0.5 * normal + 0.5));
+	}
+	
+	vec2 screenSize = vec2(perFrameData.screenWidth, perFrameData.screenHeight);
+	
+	bool bSmallTriangleCullingEnabled = perFrameData.bSmallTriangleCullingEnabled == 1;
+	bool bBackfaceCullingEnabled = perFrameData.bTriangleBackfaceCullingEnabled == 1;
+
+	for (uint localTriangleIndex = groupThreadIndex;
+		localTriangleIndex < meshlets[meshletIndex].triangleCount;
+		localTriangleIndex += kShaderGroupSize)
+	{
+		// Triangle culling:
+		// https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc2016/Presentations/Wihlidal_Graham_OptimizingTheGraphics.pdf
+
+		bool bVisible = true;
+
+		uint triangleIndex0 = uint(meshletTriangles[meshlets[meshletIndex].triangleOffset + 3 * localTriangleIndex + 0]);
+		uint triangleIndex1 = uint(meshletTriangles[meshlets[meshletIndex].triangleOffset + 3 * localTriangleIndex + 1]);
+		uint triangleIndex2 = uint(meshletTriangles[meshlets[meshletIndex].triangleOffset + 3 * localTriangleIndex + 2]);
+
+		vec2 screenPosition0 = (0.5 + 0.5 * clipPositions[triangleIndex0]).xy * screenSize;
+		vec2 screenPosition1 = (0.5 + 0.5 * clipPositions[triangleIndex1]).xy * screenSize;
+		vec2 screenPosition2 = (0.5 + 0.5 * clipPositions[triangleIndex2]).xy * screenSize;
+		
+		if (bVisible && bSmallTriangleCullingEnabled)
+		{
+			float minX = min(min(screenPosition0.x, screenPosition1.x), screenPosition2.x);
+			float minY = min(min(screenPosition0.y, screenPosition1.y), screenPosition2.y);
+			float maxX = max(max(screenPosition0.x, screenPosition1.x), screenPosition2.x);
+			float maxY = max(max(screenPosition0.y, screenPosition1.y), screenPosition2.y);
+
+			bool bSmallTriangleCulled =
+				uint(round(minX)) == uint(round(maxX)) ||
+				uint(round(minY)) == uint(round(maxY));
+
+			bVisible = bVisible && !bSmallTriangleCulled;
+		}
+
+		if (bVisible && bBackfaceCullingEnabled)
+		{
+			vec3 edgeVector0 = vec3(screenPosition1 - screenPosition0, 0);
+			vec3 edgeVector1 = vec3(screenPosition2 - screenPosition1, 0);
+			vec3 triangleOrientation = cross(edgeVector0, edgeVector1);
+
+			bool bBackfaceCulled = triangleOrientation.z >= 0;
+			bVisible = bVisible && !bBackfaceCulled;
+		}
+		
+		gl_MeshPrimitivesEXT[localTriangleIndex].gl_CullPrimitiveEXT = !bVisible;
+		gl_PrimitiveTriangleIndicesEXT[localTriangleIndex] = uvec3(triangleIndex0, triangleIndex1, triangleIndex2);
+	}
+
+	SetMeshOutputsEXT(meshlets[meshletIndex].vertexCount, meshlets[meshletIndex].triangleCount);
+}

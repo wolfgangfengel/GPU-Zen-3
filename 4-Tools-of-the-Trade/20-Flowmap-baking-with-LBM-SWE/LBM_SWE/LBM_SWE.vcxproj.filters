@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="flow">
+      <UniqueIdentifier>{5b353618-84af-4f75-9816-25c5a4b849e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2d">
+      <UniqueIdentifier>{a6eb0ea9-a793-4d66-82e6-3f0609447d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2d\cpu">
+      <UniqueIdentifier>{c39d75a4-cb43-45fd-97cb-8bb924f6d48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2d\gpu">
+      <UniqueIdentifier>{6cb2c0a4-f875-43d1-8602-d28d9f246819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="3rdParty">
+      <UniqueIdentifier>{0512a72d-8e47-41fc-8c0f-1b5810b773dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\colormaps.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\colorramp.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlcudaCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlFluidCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlFluidParam.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlLatticeNode.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlLbmCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="flow\lwflow_swe2D.h">
+      <Filter>flow</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\mlConstantParamCpu2D.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\mlConstantParamGpu2D.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\gpu\CalForce_swe_2D.h">
+      <Filter>2d\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\gpu\CalMacro_swe_2D.h">
+      <Filter>2d\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\gpu\Collide_swe_2D.h">
+      <Filter>2d\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\gpu\Stream_swe_2D.h">
+      <Filter>2d\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\UtilFuncCpu2D.h">
+      <Filter>2d\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\UtilFuncGpu2D.h">
+      <Filter>2d\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mlCoreWin.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\cpu\Init_swe_2D.h">
+      <Filter>2d\cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\Solver_swe_2D.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\helper_cuda.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\helper_string.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\stb_image.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\stb_image_write.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="3rdParty\stb_image_resize.h">
+      <Filter>3rdParty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="inc\colorramp.cpp">
+      <Filter>inc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\testFig3_4.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\testFigh3_5.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="2d\gpu\CalForce_swe_2D.cu">
+      <Filter>2d\gpu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="2d\gpu\CalMacro_swe_2D.cu">
+      <Filter>2d\gpu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="2d\gpu\Collide_swe_2D.cu">
+      <Filter>2d\gpu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="2d\gpu\Stream_swe_2D.cu">
+      <Filter>2d\gpu</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Hlsl2Python": {
+      "commandName": "Project",
+      "commandLineArgs": "-shadertoy -gendsl -vectorizebranch -vectorization -ngl -notorch F:\\GitHub\\Hlsl2Python\\test\\test38.glsl",
+      "workingDirectory": "D:\\UGit\\Hlsl2Python\\bin\\Debug\\net6.0",
+      "nativeDebugging": true
+    }
+  }
+}

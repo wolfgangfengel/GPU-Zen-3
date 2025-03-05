@@ -1,0 +1,102 @@
+﻿  testFig3_4.cpp
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\flow\lwflow_swe2D.h(65,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\mlConstantParamCpu2D.h(7,117): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\mlConstantParamCpu2D.h(9,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(32,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(46,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(47,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(65,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(75,47): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(78,84): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(89,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(157,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(158,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(159,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(160,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(161,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(203,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(214,47): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(217,92): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(229,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(50,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(51,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(223,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(246,33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(256,33): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(272,52): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(322,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(323,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(324,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(349,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(350,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(351,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\src\testFig3_4.cpp(18,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\src\testFig3_4.cpp(20,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\src\testFig3_4.cpp(20,13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\src\testFig3_4.cpp(20,9): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\src\testFig3_4.cpp(21,35): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\src\testFig3_4.cpp(27,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(43,41): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(32): message : while compiling class template member function 'void mlEqStateCpu2D<float>::mlComputeEqstate(T,T,T,T,mlLatticeNode<T,9> &)'
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(91): message : see reference to function template instantiation 'void mlEqStateCpu2D<float>::mlComputeEqstate(T,T,T,T,mlLatticeNode<T,9> &)' being compiled
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(67): message : see reference to class template instantiation 'mlEqStateCpu2D<float>' being compiled
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(44,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(45,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(46,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(47,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(48,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(49,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(50,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(51,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  testFigh3_5.cpp
+  Generating code
+  Compiler switch has changed, fall back to full compilation.
+  All 606 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  LBM_SWE.vcxproj -> C:\Users\PC\Documents\WXWork\1688856912407523\Cache\File\2024-10\LBM_SWE\x64\Release\LBM_SWE1.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

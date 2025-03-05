@@ -1,0 +1,12 @@
+build/
+.vs/
+*.ipch
+*.obj
+*.tlog
+CMakeSettings.json
+*.blend
+*.py
+*.zip
+*.png
+*.exr
+*.svg

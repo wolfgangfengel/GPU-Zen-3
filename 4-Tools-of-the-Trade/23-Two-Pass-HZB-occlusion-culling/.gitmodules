@@ -1,0 +1,47 @@
+[submodule "3rdparty/volk"]
+	path = 3rdparty/volk
+	url = https://github.com/zeux/volk
+	branch = master
+[submodule "3rdparty/glfw"]
+	path = 3rdparty/glfw
+	url = https://github.com/glfw/glfw
+	branch = master
+[submodule "3rdparty/glm"]
+	path = 3rdparty/glm
+	url = https://github.com/g-truc/glm
+	branch = master
+[submodule "3rdparty/easy_profiler"]
+	path = 3rdparty/easy_profiler
+	url = https://github.com/yse/easy_profiler
+	branch = develop
+[submodule "3rdparty/imgui"]
+	path = 3rdparty/imgui
+	url = https://github.com/ocornut/imgui
+[submodule "3rdparty/fast_obj"]
+	path = 3rdparty/fast_obj
+	url = https://github.com/thisistherk/fast_obj
+	branch = master
+[submodule "3rdparty/VulkanMemoryAllocator"]
+	path = 3rdparty/VulkanMemoryAllocator
+	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator
+	branch = master
+[submodule "3rdparty/CRCpp"]
+	path = 3rdparty/CRCpp
+	url = https://github.com/d-bahr/CRCpp
+	branch = master
+[submodule "3rdparty/meshoptimizer-cpp"]
+	path = 3rdparty/meshoptimizer-cpp
+	url = https://github.com/Traverse-Research/meshoptimizer-cpp.git
+	branch = vertex-lock
+[submodule "3rdparty/METIS"]
+	path = 3rdparty/METIS
+	url = https://github.com/milkru/METIS.git
+	branch = master
+[submodule "3rdparty/GKlib"]
+	path = 3rdparty/GKlib
+	url = https://github.com/milkru/GKlib.git
+	branch = master
+[submodule "3rdparty/SPIRV-Reflect"]
+	path = 3rdparty/SPIRV-Reflect
+	url = https://github.com/KhronosGroup/SPIRV-Reflect.git
+	branch = main

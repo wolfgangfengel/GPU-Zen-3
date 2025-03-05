@@ -1,0 +1,564 @@
+﻿  Compiling CUDA source file 2d\gpu\CalForce_swe_2D.cu...
+  Compiling CUDA source file 2d\gpu\CalMacro_swe_2D.cu...
+  
+  D:\github\LBM_SWE\LBM_SWE>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"D:\github\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\CalForce_swe_2D.cu.obj "D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu" 
+  
+  D:\github\LBM_SWE\LBM_SWE>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"D:\github\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\CalMacro_swe_2D.cu.obj "D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu" 
+  Compiling CUDA source file 2d\gpu\Collide_swe_2D.cu...
+  Compiling CUDA source file 2d\gpu\Stream_swe_2D.cu...
+  
+  D:\github\LBM_SWE\LBM_SWE>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"D:\github\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Collide_swe_2D.cu.obj "D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu" 
+  
+  D:\github\LBM_SWE\LBM_SWE>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"D:\github\vcpkg\installed\x64-windows\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Stream_swe_2D.cu.obj "D:\github\LBM_SWE\LBM_SWE\2d\gpu\Stream_swe_2D.cu" 
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(37): warning #177-D: variable "f_ind_for" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(109): warning #177-D: variable "cu" was declared but never referenced
+            detected during instantiation of "void mlEqStateGpu2D<T>::mlComputeCentralMomentKeq(mlVelocity2D<T>, T, T, mlLatticeNode<T, 9> &) [with T=float]" 
+  D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(31): here
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(109): warning #177-D: variable "U2" was declared but never referenced
+            detected during instantiation of "void mlEqStateGpu2D<T>::mlComputeCentralMomentKeq(mlVelocity2D<T>, T, T, mlLatticeNode<T, 9> &) [with T=float]" 
+  D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(31): here
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(18): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(20): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(28): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(31): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(42): warning #177-D: variable "h_avg_x" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(43): warning #177-D: variable "h_avg_y" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(66): warning #177-D: variable "St2" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(68): warning #177-D: variable "Rxx" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(68): warning #177-D: variable "Rxy" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(68): warning #177-D: variable "Ryx" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(68): warning #177-D: variable "Ryy" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(72): warning #177-D: variable "newS" was declared but never referenced
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(109): warning #177-D: variable "cu" was declared but never referenced
+            detected during instantiation of "void mlEqStateGpu2D<T>::mlComputeCentralMomentKeq(mlVelocity2D<T>, T, T, mlLatticeNode<T, 9> &) [with T=float]" 
+  D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(48): here
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(109): warning #177-D: variable "U2" was declared but never referenced
+            detected during instantiation of "void mlEqStateGpu2D<T>::mlComputeCentralMomentKeq(mlVelocity2D<T>, T, T, mlLatticeNode<T, 9> &) [with T=float]" 
+  D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(48): here
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(18): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(20): warning #186-D: pointless comparison of unsigned integer with zero
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(28): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(31): warning #186-D: pointless comparison of unsigned integer with zero
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+  CalForce_swe_2D.cu
+  CalMacro_swe_2D.cu
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(51): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(52): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(53): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(54): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+  Stream_swe_2D.cu
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(55): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(56): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(57): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ey2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../UtilFuncGpu2D.h(58): warning #20091-D: a __constant__ variable "ex2d_gpu" cannot be directly read in a host function
+  
+  Collide_swe_2D.cu
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../../flow/lwflow_swe2D.h(68): warning C4305: '=': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(81): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalForce_swe_2D.cu(81): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../../flow/lwflow_swe2D.h(68): warning C4305: '=': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(132): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(132): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(148): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(148): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(179): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\CalMacro_swe_2D.cu(179): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../../flow/lwflow_swe2D.h(68): warning C4305: '=': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Stream_swe_2D.cu(99): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Stream_swe_2D.cu(99): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\../../flow/lwflow_swe2D.h(68): warning C4305: '=': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(116): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\gpu\Collide_swe_2D.cu(116): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  colorramp.cpp
+D:\github\LBM_SWE\LBM_SWE\inc\colormaps.h(580,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\inc\colormaps.h(732,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\inc\colormaps.h(989,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\inc\colormaps.h(1247,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\inc\colormaps.h(1506,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\inc\colormaps.h(1765,37): warning C4305: 'initializing': truncation from 'double' to 'float'
+  mlCuRunTime.cpp
+  testswe2d.cpp
+D:\github\LBM_SWE\LBM_SWE\flow\lwflow_swe2D.h(68,26): warning C4305: '=': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\mlConstantParamCpu2D.h(7,117): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\mlConstantParamCpu2D.h(9,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(17,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(21,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(28,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(30,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(51,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(53,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(116,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(117,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(118,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(119,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(120,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(219,25): warning C4018: '<': signed/unsigned mismatch
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(239,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(290,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(303,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(304,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(305,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(282,2): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\github\LBM_SWE\LBM_SWE\2d\Solver_swe_2D.h(312,2): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(17,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(18,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(20,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(22,22): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(22,7): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(22,3): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\github\LBM_SWE\LBM_SWE\src\testswe2d.cpp(23,33): warning C4305: '=': truncation from 'double' to 'float'
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(46,41): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(35): message : while compiling class template member function 'void mlEqStateCpu2D<float>::mlComputeEqstate(mlVelocity2D<float>,T,T,mlLatticeNode<T,9> &)'
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(66): message : see reference to function template instantiation 'void mlEqStateCpu2D<float>::mlComputeEqstate(mlVelocity2D<float>,T,T,mlLatticeNode<T,9> &)' being compiled
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\cpu\Init_swe_2D.h(32): message : see reference to class template instantiation 'mlEqStateCpu2D<float>' being compiled
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(47,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(48,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(49,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(50,201): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(51,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(52,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(53,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\github\LBM_SWE\LBM_SWE\2d\UtilFuncCpu2D.h(54,203): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
+D:\github\LBM_SWE\LBM_SWE\inc\mlCuRunTime.cpp(79): error C4716: '_MLCuMemcpyArrayToArray': must return a value
+D:\github\LBM_SWE\LBM_SWE\inc\mlCuRunTime.cpp(74): error C4716: '_MLCuMemcpyFromArray': must return a value
+D:\github\LBM_SWE\LBM_SWE\inc\mlCuRunTime.cpp(69): error C4716: '_MLCuMemcpyToArray': must return a value
